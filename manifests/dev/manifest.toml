@@ -1,0 +1,97 @@
+[world]
+kind = "WorldContract"
+class_hash = "0x3f63cecdc4964acafb921ba2934c6507d1b3c344edb64c2762cf08053169ab9"
+original_class_hash = "0x3f63cecdc4964acafb921ba2934c6507d1b3c344edb64c2762cf08053169ab9"
+abi = "manifests/dev/abis/deployments/dojo_world_world.json"
+address = "0x4db780e0f19002fb8171f117681d4f78d790d7e160cca2b7bcbf0f9a772112c"
+transaction_hash = "0x1c3e74f9b14f1211764e1ba84bfd0e04a0109a4ce185e94fd488a29c2da4196"
+block_number = 3
+seed = "shard_dungeon"
+name = "dojo::world::world"
+
+[world.metadata]
+profile_name = "dev"
+rpc_url = "http://localhost:5050/"
+
+[base]
+kind = "Class"
+class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+original_class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+name = "dojo::base::base"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x2c026278e1406bdac20301aed2a196cd5c5d76f4140bcc36f8de6737ef38002"
+class_hash = "0x18665747cdecdef4e2501ff1e08b6c200dc5d6543692ec70249f6500f4b26c"
+original_class_hash = "0x18665747cdecdef4e2501ff1e08b6c200dc5d6543692ec70249f6500f4b26c"
+base_class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+abi = "manifests/dev/abis/deployments/contracts/shard_dungeon_systems_hazard_hall_hazard_hall.json"
+reads = []
+writes = []
+computed = []
+init_calldata = []
+name = "shard_dungeon::systems::hazard_hall::hazard_hall"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x42b238819cde591747f18685aaed1772e9fb4ba070972b952ca963e90e27509"
+class_hash = "0x576525cfde36a91bcee0853bc1cf9d55b41d2303bfa25228657716482d8fcbe"
+original_class_hash = "0x576525cfde36a91bcee0853bc1cf9d55b41d2303bfa25228657716482d8fcbe"
+base_class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+abi = "manifests/dev/abis/deployments/contracts/shard_dungeon_systems_metagame_metagame.json"
+reads = []
+writes = []
+computed = []
+init_calldata = []
+name = "shard_dungeon::systems::metagame::metagame"
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x15946a6a0e5c40512c54cdbe1de6114ec6b6897149e60cc9bd8317f6492f584"
+original_class_hash = "0x15946a6a0e5c40512c54cdbe1de6114ec6b6897149e60cc9bd8317f6492f584"
+abi = "manifests/dev/abis/deployments/models/shard_dungeon_models_inventory_inventory.json"
+name = "shard_dungeon::models::inventory::inventory"
+
+[[models.members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "gold"
+type = "u64"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x3adb07f625a0b72f785b0f37b2cf26f523aaea3fce6296f62922e57c5d4e6cf"
+original_class_hash = "0x3adb07f625a0b72f785b0f37b2cf26f523aaea3fce6296f62922e57c5d4e6cf"
+abi = "manifests/dev/abis/deployments/models/shard_dungeon_models_profile_profile.json"
+name = "shard_dungeon::models::profile::profile"
+
+[[models.members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "name"
+type = "ByteArray"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x6edc6ad2b10db7361c89e6ce0878f9a20447c26114fb0cf1d20ff5e55069f4f"
+original_class_hash = "0x6edc6ad2b10db7361c89e6ce0878f9a20447c26114fb0cf1d20ff5e55069f4f"
+abi = "manifests/dev/abis/deployments/models/shard_dungeon_models_stats_stats.json"
+name = "shard_dungeon::models::stats::stats"
+
+[[models.members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "experience"
+type = "u64"
+key = false

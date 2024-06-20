@@ -1,0 +1,33 @@
+[package]
+cairo-version = "2.6.3"
+name = "shard_dungeon"
+version = "0.1.0"
+
+[cairo]
+sierra-replace-ids = true
+
+[dependencies]
+dojo = { git = "https://github.com/dojoengine/dojo", tag = "v0.7.2" }
+
+[[target.dojo]]
+
+[tool.dojo.env]
+rpc_url = "http://localhost:5050/"
+
+account_address = "0xb3ff441a68610b30fd5e2abbf3a1548eb6ba6f3559f2862bf2dc757e5828ca"
+private_key = "0x2bbf4f9fd0bbb2e60b0316c1fe0b76cf7a4d0198bd493ced9b8df2a3a24d68a"
+# World address will change if the world is modified. Must be updated accordingly.
+world_address = "0x4db780e0f19002fb8171f117681d4f78d790d7e160cca2b7bcbf0f9a772112c"
+
+[tool.dojo.world]
+name = "Shard Dungeon"
+description = "A project to showcase the Saya settlement combined with Katana shard execution."
+cover_uri = "file://assets/cover.png"
+icon_uri = "file://assets/icon.png"
+website = "https://github.com/dojoengine/dojo-starter"
+
+[tool.dojo.world.socials]
+x = "https://x.com/ohayo_dojo"
+discord = "https://discord.gg/FB2wR6uF"
+github = "https://github.com/dojoengine/dojo-starter"
+telegram = "https://t.me/dojoengine"
