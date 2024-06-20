@@ -31,10 +31,10 @@ sozo build
 sozo migrate apply
 
 # Register a player:
-sozo execute 0x42b238819cde591747f18685aaed1772e9fb4ba070972b952ca963e90e27509 register_player -c str:player1
+sozo execute shard_dungeon::systems::metagame::metagame register_player -c str:player1
 
 # Run the dungeon:
-sozo execute 0x2c026278e1406bdac20301aed2a196cd5c5d76f4140bcc36f8de6737ef38002 fate_strike
+sozo execute shard_dungeon::systems::hazard_hall::hazard_hall fate_strike
 ```
 
 ## Architecture
