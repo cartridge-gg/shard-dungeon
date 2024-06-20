@@ -19,3 +19,22 @@
 # Shard Dungeon
 
 An example of a Dojo game that is a simple dungeon crawler using Saya for settlement and Katana sharding execution.
+
+## Quick start
+
+```bash
+# Build the project.
+sozo build
+
+# The world's address may change if dojo-core is modified. Please check the Scarb.toml
+# and replace as necessary. If you don't know yet the world's address, comment it.
+sozo migrate apply
+```
+
+## Architecture
+
+The idea of the demonstration is to have a metagame on Starknet, where players can register and then start a dungeon. For now, the dungeon is single player.
+
+The shard execution must start the dungeon run, the player has to interact with the shard to effectively finish beat the dungeon's boss.
+
+Once the dungeon is over, Saya must have all the necessary info to update the world state on the base layer.
