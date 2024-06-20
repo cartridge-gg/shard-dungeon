@@ -17,6 +17,7 @@ mod metagame {
     use super::IMetagame;
 
     use shard_dungeon::models::profile::Profile;
+    use shard_dungeon::models::inventory::Inventory;
     use shard_dungeon::common::utils;
 
     #[abi(embed_v0)]
@@ -27,7 +28,9 @@ mod metagame {
             let mut profile = get!(world, player, (Profile));
             profile.name = name;
 
-            set!(world, (profile));
+            let inventory = Inventory { player, gold: 100, };
+
+            set!(world, (profile, inventory));
         }
     }
 }
