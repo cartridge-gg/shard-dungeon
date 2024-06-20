@@ -13,6 +13,9 @@ mod common {
     pub mod utils;
 }
 
+#[cfg(test)]
 mod tests {
-    mod test_world;
+    mod utils;
+    mod test_metagame;
+    mod test_hazard_hall;
 }
