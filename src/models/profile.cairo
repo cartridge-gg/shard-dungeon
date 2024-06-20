@@ -2,8 +2,8 @@ use starknet::ContractAddress;
 
 #[derive(Drop, Serde)]
 #[dojo::model]
-struct Profile {
+pub struct Profile {
     #[key]
-    player: ContractAddress,
-    name: ByteArray,
+    pub player: ContractAddress,
+    pub name: ByteArray,
 }

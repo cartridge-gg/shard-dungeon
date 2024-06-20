@@ -1,0 +1,10 @@
+kind = "DojoContract"
+class_hash = "0x576525cfde36a91bcee0853bc1cf9d55b41d2303bfa25228657716482d8fcbe"
+original_class_hash = "0x576525cfde36a91bcee0853bc1cf9d55b41d2303bfa25228657716482d8fcbe"
+base_class_hash = "0x0"
+abi = "manifests/dev/abis/base/contracts/shard_dungeon_systems_metagame_metagame.json"
+reads = []
+writes = []
+computed = []
+init_calldata = []
+name = "shard_dungeon::systems::metagame::metagame"

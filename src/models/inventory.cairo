@@ -1,9 +1,9 @@
 use starknet::ContractAddress;
 
-#[derive(Copy, Drop, Serde)]
+#[derive(Drop, Serde)]
 #[dojo::model]
-struct Inventory {
+pub struct Inventory {
     #[key]
-    player: ContractAddress,
-    gold: u64,
+    pub player: ContractAddress,
+    pub gold: u64,
 }

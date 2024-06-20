@@ -2,6 +2,9 @@
 cairo-version = "2.6.3"
 name = "shard_dungeon"
 version = "0.1.0"
+# Dojo needs to be updated to support this edition. Currently
+# some `pub` are in the files, but not used until this edition is supported.
+# edition = "2023_11"
 
 [cairo]
 sierra-replace-ids = true

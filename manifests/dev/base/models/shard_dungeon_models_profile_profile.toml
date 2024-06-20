@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0x3adb07f625a0b72f785b0f37b2cf26f523aaea3fce6296f62922e57c5d4e6cf"
+original_class_hash = "0x3adb07f625a0b72f785b0f37b2cf26f523aaea3fce6296f62922e57c5d4e6cf"
+abi = "manifests/dev/abis/base/models/shard_dungeon_models_profile_profile.json"
+name = "shard_dungeon::models::profile::profile"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "name"
+type = "ByteArray"
+key = false

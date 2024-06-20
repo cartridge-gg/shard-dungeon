@@ -1,16 +1,16 @@
 mod systems {
-    mod metagame;
-    mod hazard_hall;
+    pub mod metagame;
+    pub mod hazard_hall;
 }
 
 mod models {
-    mod inventory;
-    mod profile;
-    mod stats;
+    pub mod inventory;
+    pub mod profile;
+    pub mod stats;
 }
 
 mod common {
-    mod utils;
+    pub mod utils;
 }
 
 mod tests {

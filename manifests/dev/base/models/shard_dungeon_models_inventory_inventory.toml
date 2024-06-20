@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0x15946a6a0e5c40512c54cdbe1de6114ec6b6897149e60cc9bd8317f6492f584"
+original_class_hash = "0x15946a6a0e5c40512c54cdbe1de6114ec6b6897149e60cc9bd8317f6492f584"
+abi = "manifests/dev/abis/base/models/shard_dungeon_models_inventory_inventory.json"
+name = "shard_dungeon::models::inventory::inventory"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "gold"
+type = "u64"
+key = false
